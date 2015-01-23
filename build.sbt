@@ -18,6 +18,8 @@ proguardOptions in Android ++= Seq("-dontobfuscate", "-dontoptimize", "-keepattr
 
 libraryDependencies += "org.scaloid" %% "scaloid" % "3.6.1-10" withSources() withJavadoc()
 
+libraryDependencies += "org.scala-lang.modules" %% "scala-xml" % "1.0.2"
+
 scalacOptions in Compile += "-feature"
 
 run <<= run in Android
